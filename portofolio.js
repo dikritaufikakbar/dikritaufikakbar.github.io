@@ -3,7 +3,7 @@ const CONFIG = {
   name: "Dikri Taufik Akbar",
   github: "dikritaufikakbar",
   bio: "Aku kuliah di Universitas Mandiri Subang, jurusan Sistem Informasi, dan sedang belajar JavaScript.",
-  avatar: "dikri.jpg"
+  avatar: "dikri.jpg",
   hobbies: ["Nonton anime", "Ngoding", "Main game", "Dengar musik"],
   education: [
     { period: "2026 - sekarang", school: "Universitas Mandiri Subang", detail: "Jurusan Sistem Informasi dan Semester 1" },
