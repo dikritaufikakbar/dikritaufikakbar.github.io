@@ -3,7 +3,7 @@ const CONFIG = {
   name: "Dikri Taufik Akbar",
   github: "dikritaufikakbar",
   bio: "Aku kuliah di Universitas Mandiri Subang, jurusan Sistem Informasi, dan sedang belajar JavaScript.",
-  avatar: "foto/dikri.jpg",
+  avatar: "dikri.jpg"
   hobbies: ["Nonton anime", "Ngoding", "Main game", "Dengar musik"],
   education: [
     { period: "2026 - sekarang", school: "Universitas Mandiri Subang", detail: "Jurusan Sistem Informasi dan Semester 1" },
@@ -34,15 +34,15 @@ const CONFIG = {
      img: isi dengan link/path gambar karakter kalau punya (misal "Foto/march7.jpg").
      Kalau kosong, tampil ikon emoji. */
   crew: [
-    { view: "about",   name: "Sunday", path: "Harmony", elem: "Imaginary", stars: 5, icon: "🕊️", color: "#e8c25a", img: "foto/sunday.jpg", choice: "Ceritakan tentang dirimu.",
+    { view: "about",   name: "Sunday", path: "Harmony", elem: "Imaginary", stars: 5, icon: "🕊️", color: "#e8c25a", img: "sunday.jpg", choice: "Ceritakan tentang dirimu.",
       greet: "Silakan duduk. Aku akan menceritakan siapa pemilik kereta ini, mulai dari hobi sampai riwayat sekolahnya." },
-    { view: "github",  name: "March 7th", path: "Preservation", elem: "Ice", stars: 4, icon: "📸", color: "#ff8fb8", img: "foto/march7.jpg", choice: "Apa saja yang sudah kamu kerjakan di GitHub?",
+    { view: "github",  name: "March 7th", path: "Preservation", elem: "Ice", stars: 4, icon: "📸", color: "#ff8fb8", img: "march7.jpg", choice: "Apa saja yang sudah kamu kerjakan di GitHub?",
       greet: "Aku sudah foto semua aktivitasnya! Lihat bahasa yang paling sering dipakai dan repo yang terakhir diperbarui." },
-    { view: "skills",  name: "Dan Heng", path: "Hunt", elem: "Wind", stars: 4, icon: "🗡️", color: "#3fae9a", img: "foto/danheng.jpg", choice: "Kemampuan apa yang kamu punya?",
+    { view: "skills",  name: "Dan Heng", path: "Hunt", elem: "Wind", stars: 4, icon: "🗡️", color: "#3fae9a", img: "danheng.jpg", choice: "Kemampuan apa yang kamu punya?",
       greet: "Daftar kemampuannya ada di sini. Lihat sendiri." },
-    { view: "repos",   name: "Himeko", path: "Erudition", elem: "Fire", stars: 5, icon: "☕", color: "#d9505a", img: "foto/himeko.jpg", choice: "Perlihatkan proyek-proyekmu.",
+    { view: "repos",   name: "Himeko", path: "Erudition", elem: "Fire", stars: 5, icon: "☕", color: "#d9505a", img: "himeko.jpg", choice: "Perlihatkan proyek-proyekmu.",
       greet: "Duduk dulu, ambil kopi. Semua proyek ada di meja ini, langsung dari GitHub." },
-    { view: "contact", name: "Welt", path: "Nihility", elem: "Imaginary", stars: 5, icon: "🎩", color: "#3a5bd9", img: "foto/welt.jpg", choice: "Bagaimana cara menghubungimu?",
+    { view: "contact", name: "Welt", path: "Nihility", elem: "Imaginary", stars: 5, icon: "🎩", color: "#3a5bd9", img: "welt.jpg", choice: "Bagaimana cara menghubungimu?",
       greet: "Pintu kereta selalu terbuka. Kirim pesan kapan saja." }
   ],
   demos: {
@@ -60,7 +60,7 @@ const CONFIG = {
     ]
   }
 };
-const HOME_CHARACTER = { name: "Stelle", path: "Destruction", elem: "Physical", stars: 5, icon: "⭐", color: "#d9b86a", img: "foto/stelle.jpg" };
+const HOME_CHARACTER = { name: "Stelle", path: "Destruction", elem: "Physical", stars: 5, icon: "⭐", color: "#d9b86a", img: "stelle.jpg" };
 const HOME_LINE = "Akhirnya kamu datang! Selamat datang di ruang kereta. Mau mulai dari mana?";
 const SAMPLE = [
   { name: "tugas-web-1", description: "Tugas pemrograman web: halaman profil dengan HTML dan CSS.", language: "HTML", stargazers_count: 2, html_url: "#", homepage: "" },
