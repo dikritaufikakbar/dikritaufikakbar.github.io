@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portofolio.css">
+</head>
+<body>
+
+<!-- Adegan kereta -->
+<div id="intro">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="planet" aria-hidden="true"></div>
+  <div class="orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="route">ASTRAL EXPRESS // RUTE BINTANG: SUBANG → PORTOFOLIO</p>
+  <div class="train" aria-hidden="true">
+    <svg viewBox="0 0 560 130" width="100%">
+      <g>
+        <rect x="10" y="30" width="170" height="62" rx="8" fill="#f3ead6" stroke="#1b2147" stroke-width="3"/>
+        <rect x="10" y="66" width="170" height="10" fill="#3a5bd9"/>
+        <rect x="10" y="76" width="170" height="4" fill="#d9b86a"/>
+        <rect x="28" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="66" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="104" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="142" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/>
+        <rect x="190" y="30" width="170" height="62" rx="8" fill="#f3ead6" stroke="#1b2147" stroke-width="3"/>
+        <rect x="190" y="66" width="170" height="10" fill="#3a5bd9"/>
+        <rect x="190" y="76" width="170" height="4" fill="#d9b86a"/>
+        <rect x="208" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="246" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="284" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/><rect x="322" y="42" width="26" height="18" rx="3" fill="#7fd8ff"/>
+        <path d="M370 92V44q0-14 16-18h60q40 4 70 34 18 18 30 32z" fill="#f3ead6" stroke="#1b2147" stroke-width="3"/>
+        <path d="M370 70h140l50 22H370z" fill="#3a5bd9"/>
+        <path d="M410 40h40q30 6 52 26h-92z" fill="#7fd8ff"/>
+        <rect x="372" y="14" width="26" height="18" rx="3" fill="#d9b86a" stroke="#1b2147" stroke-width="3"/>
+        <circle cx="548" cy="86" r="6" fill="#ffe27a"/>
+        <g fill="#1b2147"><circle cx="50" cy="104" r="14"/><circle cx="140" cy="104" r="14"/><circle cx="230" cy="104" r="14"/><circle cx="320" cy="104" r="14"/><circle cx="410" cy="104" r="16"/><circle cx="490" cy="104" r="16"/></g>
+        <g fill="#d9b86a"><circle cx="50" cy="104" r="5"/><circle cx="140" cy="104" r="5"/><circle cx="230" cy="104" r="5"/><circle cx="320" cy="104" r="5"/><circle cx="410" cy="104" r="6"/><circle cx="490" cy="104" r="6"/></g>
+      </g>
+    </svg>
+  </div>
+  <div class="track" aria-hidden="true"></div>
+  <div class="boarding">
+    <p class="ticket">✦ TIKET TRAILBLAZER ✦</p>
+    <p class="title" id="introTitle">DIKRI TAUFIK AKBAR</p>
+    <button class="go" id="goBtn" type="button">NAIK KERETA</button>
+    <button class="skip" id="skipBtn" type="button">Lewati</button>
+  </div>
+</div>
+
+<!-- Ruang utama -->
+<div id="game" hidden>
+  <header class="hud">
+    <span class="hud-name" id="hudName">DIKRI TAUFIK AKBAR</span>
+    <span class="hud-loc">RUANG KERETA · <b id="hudSection">Beranda</b></span>
+    <div class="hud-res"><span class="res" title="Stellar Jade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z"/></svg><b id="jade">0</b></span><span class="res"><small>MISI</small><b id="mission">0/5</b></span></div>
+    <button id="homeBtn" class="mini" type="button">Beranda</button>
+  </header>
+
+  <main class="stage">
+    <div class="portrait" id="portrait" aria-hidden="true"><span id="pIcon"></span></div>
+
+    <section class="panel-area">
+      <div class="view" id="view" aria-live="polite" hidden></div>
+
+      <div class="dialog">
+        <div class="speaker" id="speaker">Stelle</div>
+        <p class="line" id="line"></p>
+        <ul class="choices" id="choices"></ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <footer>© <span id="year"></span> <span id="footName">DIKRI TAUFIK AKBAR</span> · Tekan angka untuk memilih, Esc untuk kembali</footer>
+</div>
+
+<script src="portofolio.js"></script>
+</body>
+</html>
